@@ -1,0 +1,61 @@
+{
+  "homePageMenu": {
+    "companyBtn": "xpath;//ul[@id='menu-main-nav-1']//a[@class='main-link'][normalize-space()='Company']",
+    "careersBtn": "xpath;//ul[@id='menu-main-nav-1']//a[@class='main-link'][normalize-space()='Careers']",
+    "contactUsBtn": "xpath;//button[normalize-space()='Contact us']"
+  },
+  "contactUsForm": {
+    "nameTextBox": "xpath;//input[@id='cf-1']",
+    "emailTextBox": "xpath;//input[@id='cf-2']",
+    "mobileTextBox": "xpath;//input[@id='cf-3']",
+    "subjectTextBox": "xpath;//input[@id='cf-4']",
+    "messagesTextBox": "xpath;//textarea[@id='cf-5']",
+    "robotCheckBox": "xpath;//span[@id='recaptcha-anchor']",
+    "sendBtn": "xpath;//input[@value='Send']",
+    "emailError": "xpath;//input[@id='cf-2']/following-sibling::span"
+  },
+  "companyPage": {
+    "leaderShipSection": "xpath;//section[@class='company-members']",
+    "leaderShipText": "xpath;//h2[normalize-space()='Leadership']",
+    "facebookBtn": "xpath;//span[@class='musala musala-icon-facebook']"
+  },
+  "facebookPage": {
+    "pageName": "xpath;(//span[contains(text(),'Musala Soft')])[1]",
+    "pageProfilePicture": "xpath;//img[@class='_6tb5 img']"
+  },
+  "careersPage": {
+    "checkOurOpenPositionsBtn": "xpath;//span[@data-alt='Check our open positions']",
+    "locationDDL": "id;get_location",
+    "anyWhereBtn": "xpath;//option[@value='Anywhere']",
+    "sofiaLocation": "xpath;//option[@value='Sofia']",
+    "skopjeLocation": "xpath;//option[@value='Skopje']",
+    "position": "xpath;//h2[normalize-space()='Experienced Automation QA Engineer']"
+  },
+  "positionPage": {
+    "generalDescriptionSection": "xpath;//h2[normalize-space()='General description']",
+    "requirementsSection": "xpath;//h2[normalize-space()='Requirements']",
+    "responsibilitiesSection": "xpath;//h2[normalize-space()='Responsibilities']",
+    "whatWeOfferSection": "xpath;//h2[normalize-space()='What we offer']",
+    "applyBtn": "xpath;//input[@value='Apply']"
+  },
+  "applyForm": {
+    "uploadFileBtn": "xpath;//input[@id='uploadtextfield']",
+    "sendBtn": "xpath;//input[@value='Send']"
+  },
+  "errorMessages": {
+    "errorForm": "xpath;//div[@class='message-form-content']",
+    "multipleErrors": "xpath;//div[@class='message-form-content']/*[1]",
+    "closeBtn": "xpath;//button[@class='close-form']",
+    "nameError": "xpath;//input[@id='cf-1']/following-sibling::span",
+    "emailError": "xpath;//input[@id='cf-2']/following-sibling::span",
+    "mobileError": "xpath;//input[@id='cf-3']/following-sibling::span",
+    "messageError": "xpath;//textarea[@id='cf-6']/following-sibling::span",
+    "notARobotError": "xpath;//span[normalize-space()='Please verify that you are not a robot.']",
+    "emailTextBox": "id;cf-2",
+    "mobileTextBox": "id;cf-3"
+  },
+  "positionList": {
+    "openPositions": "tag;article",
+    "positionInfoLink": "class;card-jobsHot__link"
+  }
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Lombok Experiment" parallel="tests" thread-count="2">
+
+    <listeners>
+        <listener class-name="Analyzer.RetryTransformer"/>
+        <listener class-name="Listeners.TestAllureListener"/>
+    </listeners>
+
+    <test name="Automation tasks new - 01.2021">
+        <parameter name="Browser" value="chrome"/>
+        <parameter name="ENV" value="TEST"/>
+        <parameter name="URL" value="https://www.musala.com/"/>
+
+        <classes>
+            <class name="tests.contactUsTest"/>
+            <class name="tests.companySectionTest"/>
+            <class name="tests.joinUsSectionTest"/>
+            <class name="tests.positionsListTest"/>
+        </classes>
+    </test> <!-- configuration annotation Test -->
+</suite> <!-- Suite -->
