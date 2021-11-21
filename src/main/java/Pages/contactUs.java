@@ -12,7 +12,13 @@ import org.testng.asserts.SoftAssert;
 public class contactUs extends BasePage {
 
     SoftAssert softAssert = new SoftAssert();
-    
+
+    public String username;
+    public String userEmail;
+    public String userMobile;
+    public String userSubject;
+    public String userMessage;
+
     public void openContactUsForm() {
         //Open Contact Form
         WebElement contactUsBtn = ObjectRepositoryJsonParser.getObjectLocator("$.homePageMenu.contactUsBtn");
@@ -26,27 +32,32 @@ public class contactUs extends BasePage {
         WebElement name = ObjectRepositoryJsonParser.getObjectLocator("$.contactUsForm.nameTextBox");
         elementClear(name);
         elementClick(name);
-        elementSendKeys(name,userName);
+        setUsername(userName);
+        elementSendKeys(name,getUsername());
 
         WebElement email = ObjectRepositoryJsonParser.getObjectLocator("$.contactUsForm.emailTextBox");
         elementClear(email);
         elementClick(email);
-        elementSendKeys(email,userEmail);
+        setUserEmail(userEmail);
+        elementSendKeys(email,getUserEmail());
 
         WebElement mobile = ObjectRepositoryJsonParser.getObjectLocator("$.contactUsForm.mobileTextBox");
         elementClear(mobile);
         elementClick(mobile);
-        elementSendKeys(mobile,userMobile);
+        setUserMobile(userMobile);
+        elementSendKeys(mobile,getUserMobile());
 
         WebElement subject = ObjectRepositoryJsonParser.getObjectLocator("$.contactUsForm.subjectTextBox");
         elementClear(subject);
         elementClick(subject);
-        elementSendKeys(subject,userSubject);
+        setUserSubject(userSubject);
+        elementSendKeys(subject,getUserSubject());
 
         WebElement message = ObjectRepositoryJsonParser.getObjectLocator("$.contactUsForm.messagesTextBox");
         elementClear(message);
         elementClick(message);
-        elementSendKeys(message,userMessage);
+        setUserMessage(userMessage);
+        elementSendKeys(message,getUserMessage());
 
     }
 
